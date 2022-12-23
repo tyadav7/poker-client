@@ -1,0 +1,68 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    ::ng-deep app-card, 
+    ::ng-deep app-deck {
+        $card-width: 200px;
+        $card-height: calc(1.4*$card-width);
+        $card-x-center: calc($card-width/2);
+        $card-y-center: calc(1.4*$card-width/2);
+
+        .card-frame {
+            display: inline-block;
+            margin: 30px;
+        }
+
+        .svg-card {
+            width: $card-width;
+            height: $card-height;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px black, 10px 15px 40px #a9a9a9;
+        }
+
+        .svg-card>.back {
+            width: $card-width;
+            height: $card-height;
+            fill: white;
+        }
+
+        /* Card 1 */
+        .south-diamond {
+            fill: white;
+        }
+
+        .east-diamond {
+            fill: yellow;
+        }
+
+        .north-diamond {
+            fill: #3f51b5;
+        }
+
+        .west-diamond {
+            fill: #222222;
+        }
+
+        /* Card 2 */
+        .inner {
+            width: $card-width - 30px;
+            height: 1.4*$card-width - 30px;
+            stroke: black;
+        }
+
+        /*Courtesy of icomoon.io*/
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke: black;
+            stroke-width: 0.4px;
+            fill: #3f51b5;
+        }
+
+    }
+}

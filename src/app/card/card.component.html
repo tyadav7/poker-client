@@ -1,0 +1,18 @@
+<div class="card-frame">
+    <svg class="card svg-card">
+        <defs>
+            <pattern id="circles" patternUnits="userSpaceOnUse" x="0" y="-10" width="10" height="10">
+                <circle cx="5" cy="5" r="5" style="fill: none; stroke: #3f51b5; stroke-width: 1px;" />
+            </pattern>
+            <!--Courtesy of icomoon.io-->
+            <symbol id="icon-html-five" viewBox="0 0 32 32">
+                <title>html-five</title>
+                <path
+                    d="M1.892 0l2.567 28.801 11.524 3.199 11.554-3.204 2.572-28.796h-28.216zM24.52 9.42h-13.517l0.322 3.617h12.874l-0.97 10.844-7.245 2.008-7.237-2.008-0.495-5.547h3.547l0.252 2.82 3.933 1.060 0.009-0.002 3.935-1.062 0.408-4.58h-12.242l-0.953-10.681h17.694l-0.316 3.532z">
+                </path>
+            </symbol>
+        </defs>
+        <text x="100" y="100" [attr.fill]="getColor()" text-anchor="middle" font-size="100">{{rank}}</text>
+        <text x="100" y="250" [attr.fill]="getColor()" text-anchor="middle" font-size="200">{{suit}}</text>
+    </svg>
+</div>

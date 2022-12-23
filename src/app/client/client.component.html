@@ -1,0 +1,5 @@
+<app-deck (shuffle)="onShuffled()" (dealt)="onCardDealt($event)"></app-deck>
+<app-card *ngIf="currentCard" [suit]="currentCard.suit" [rank]="currentCard.rank"></app-card>
+<app-progress-spinner color="accent" [backdropEnabled]="true" [positionGloballyCenter]="true"
+ [displayProgressSpinner]="displayProgressSpinner">
+</app-progress-spinner>
